@@ -1,0 +1,32 @@
+{
+  "name": "rd/php-rpc-client",
+  "description": "A RPC client for tourscool",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "http://www.tourscool.com",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Vincent Mi",
+      "email": "miwenshu@gmail.com",
+      "homepage": "http://vnzmi.com",
+            "role": "Owner"
+    }
+  ],
+  "require-dev":{
+        "phpunit/phpunit":"5.7.*"
+    },
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tourscool\\RpcClient": "src/"
+    }
+  },
+  "autoload-dev": {
+        "psr-4": {
+            "Test\\": "test/"
+        }
+    }
+}
