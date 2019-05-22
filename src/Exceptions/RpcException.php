@@ -1,6 +1,6 @@
 <?php
 
-namespace Tourscool\RpcClient;
+namespace Tourscool\RpcClient\Exceptions;
 
 class RpcException extends \Exception {
 

@@ -9,10 +9,10 @@ PHP RPC 客户端,使用JSON对载荷进行编码和解码
 
 ```php
 
-use Tourscool\PhpClient\Client;
+use Tourscool\RpcClient\Client;
 
 $client = new Client([
-    'host'=>[
+    'endpoints'=>[
         'tcp://192.168.1.251:20182' ,
         'tcp://192.168.1.252:2010'
         ]
