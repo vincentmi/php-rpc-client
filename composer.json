@@ -29,10 +29,11 @@
       "Test\\": "test/"
     }
   },
-  "repositories": {
-    "packagist": {
+  "repositories": [
+
+    {
       "type": "composer",
       "url": "https://packagist.laravel-china.org"
     }
-  }
+  ]
 }
