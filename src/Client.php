@@ -95,11 +95,11 @@ class Client
             throw new RpcException("receive error",303);
         }
         $result =  $this->getEncoder()->decode($ret);
-        if($result['code'] == 200 )
+        if($result['c'] == 0 )
         {
-            return $result['data'];
+            return $result['d'];
         }else{
-            throw new RpcException($result['message'] , $result['code']);
+            throw new RpcException($result['m'] , $result['c']);
         }
     }
 

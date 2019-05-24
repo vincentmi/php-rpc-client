@@ -1,5 +1,5 @@
 {
-  "name": "rd/php-rpc-client",
+  "name": "tourscool/php-rpc-client",
   "description": "A RPC client for tourscool",
   "type": "library",
   "license": "MIT",
