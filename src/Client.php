@@ -103,6 +103,18 @@ class Client
         }
     }
 
+    public function __get($name)
+    {
+        $accessor = 'get'.$name;
+        if(method_exists($this,$accessor))
+        {
+            return call_user_func([$this,$accessor]);
+        }else{
+            $this->service($name);
+            return $this;
+        }
+    }
+
 
     public function call($method, $params)
     {
